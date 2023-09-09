@@ -1,0 +1,522 @@
+[INFO]caseLogMethod.py:68-00:03:58.815 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:03:58.881 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:03:58.881 >> Method Name: testCase08_handles 
+[INFO]caseLogMethod.py:74-00:03:58.881 >> Test Description: 查看日历下便签，越权查看，用户1查看用户2的日历便签 
+[INFO]test_level3.py:36-00:03:58.881 >> 查看日历下便签 
+[INFO]apiRe.py:22-00:03:58.897 >> url:http://note-api.wps.cn/v3/notesvr/web/getnotes/remind 
+[INFO]apiRe.py:23-00:03:58.897 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SHITw2Sa6ftb0AJy1dOOrePI8B0g00a9cb574004d65b716"} 
+[INFO]apiRe.py:26-00:03:59.040 >> res code:412 
+[INFO]apiRe.py:27-00:03:59.040 >> res body:{"errorCode":-1011,"errorMsg":"user change!"} 
+[INFO]caseLogMethod.py:68-00:03:59.040 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:03:59.055 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:03:59.055 >> Method Name: testCase09_handles 
+[INFO]caseLogMethod.py:74-00:03:59.055 >> Test Description: 查看日历下便签，越权查看，用户2查看用户1的日历便签 
+[INFO]test_level3.py:57-00:03:59.055 >> 查看日历下便签 
+[INFO]apiRe.py:22-00:03:59.055 >> url:http://note-api.wps.cn/v3/notesvr/web/getnotes/remind 
+[INFO]apiRe.py:23-00:03:59.072 >> headers:{"Content-Type": "application/json", "X-user-key": "1298511638", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:03:59.203 >> res code:412 
+[INFO]apiRe.py:27-00:03:59.203 >> res body:{"errorCode":-1011,"errorMsg":"user change!"} 
+[INFO]caseLogMethod.py:68-00:03:59.203 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:03:59.203 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:03:59.203 >> Method Name: testCase10_handles 
+[INFO]caseLogMethod.py:74-00:03:59.219 >> Test Description: 校验新增日历下的便签，查看是否新增成功 
+[STEP]test_level3.py:78-00:03:59.219 >> 前置条件1：新增日历下的便签 
+[INFO]apiRe.py:22-00:03:59.219 >> url:http://note-api.wps.cn/v3/notesvr/set/noteinfo 
+[INFO]apiRe.py:23-00:03:59.219 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:03:59.365 >> res code:200 
+[INFO]apiRe.py:27-00:03:59.365 >> res body:{"responseTime":32,"infoVersion":1,"infoUpdateTime":1694189040506} 
+[STEP]test_level3.py:89-00:03:59.380 >> 查看日历下的便签，是否存在 
+[INFO]apiRe.py:22-00:03:59.380 >> url:http://note-api.wps.cn/v3/notesvr/web/getnotes/remind 
+[INFO]apiRe.py:23-00:03:59.380 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:03:59.537 >> res code:200 
+[INFO]apiRe.py:27-00:03:59.537 >> res body:{"responseTime":0,"webNotes":[]} 
+[INFO]caseLogMethod.py:68-00:04:57.389 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:04:57.452 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:04:57.452 >> Method Name: testCase10_handles 
+[INFO]caseLogMethod.py:74-00:04:57.468 >> Test Description: 校验新增日历下的便签，查看是否新增成功 
+[STEP]test_level3.py:78-00:04:57.468 >> 前置条件1：新增日历下的便签 
+[INFO]apiRe.py:22-00:04:57.468 >> url:http://note-api.wps.cn/v3/notesvr/set/noteinfo 
+[INFO]apiRe.py:23-00:04:57.468 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:04:57.629 >> res code:200 
+[INFO]apiRe.py:27-00:04:57.629 >> res body:{"responseTime":25,"infoVersion":1,"infoUpdateTime":1694189098754} 
+[STEP]test_level3.py:89-00:04:57.629 >> 查看日历下的便签，是否存在 
+[INFO]apiRe.py:22-00:04:57.629 >> url:http://note-api.wps.cn/v3/notesvr/web/getnotes/remind 
+[INFO]apiRe.py:23-00:04:57.645 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:04:57.778 >> res code:200 
+[INFO]apiRe.py:27-00:04:57.778 >> res body:{"responseTime":0,"webNotes":[]} 
+[INFO]caseLogMethod.py:68-00:19:28.499 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:19:28.532 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:19:28.534 >> Method Name: testCase07_handles 
+[INFO]caseLogMethod.py:74-00:19:28.535 >> Test Description: 校验删除一条便签，回收站能否查看 
+[STEP]test_level3.py:36-00:19:28.536 >> 前置步骤1：新增一条便签 
+[INFO]test_level3.py:37-00:19:28.537 >> 创建用户1的便签数据 
+[INFO]test_level3.py:39-00:19:28.819 >> ['1694189968538_noteId0'] 
+[STEP]test_level3.py:46-00:19:28.820 >> 前置步骤2：删除已经新增的便签 
+[INFO]apiRe.py:22-00:19:28.821 >> url:http://note-api.wps.cn/v3/notesvr/delete 
+[INFO]apiRe.py:23-00:19:28.823 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:19:28.956 >> res code:200 
+[INFO]apiRe.py:27-00:19:28.957 >> res body:{"responseTime":26} 
+[STEP]test_level3.py:55-00:19:28.959 >> 前置步骤3：查询回收站下的已经删除的便签 
+[INFO]apiRe.py:38-00:19:28.960 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/10/notes 
+[INFO]apiRe.py:39-00:19:28.961 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:19:29.102 >> res code:200 
+[INFO]apiRe.py:43-00:19:29.104 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694189968538_noteId0","createTime":1694189969804,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694189970106,"groupId":null,"title":"1694189968685_title","summary":"1694189968685_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694189969968},{"noteId":"1694181814390_noteId0","createTime":1694181815589,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181815945,"groupId":null,"title":"1694181814523_title","summary":"1694181814523_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181815727},{"noteId":"1694181755151_noteId0","createTime":1694181756359,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181756719,"groupId":null,"title":"1694181755290_title","summary":"1694181755290_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181756502},{"noteId":"1694181657020_noteId0","createTime":1694181658260,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181658589,"groupId":null,"title":"1694181657182_title","summary":"1694181657182_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181658425},{"noteId":"1694181619566_noteId0","createTime":1694181620795,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181621089,"groupId":null,"title":"1694181619705_title","summary":"1694181619705_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181620945},{"noteId":"1694180880862_noteId0","createTime":1694180882106,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180882401,"groupId":null,"title":"1694180881003_title","summary":"1694180881003_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180882249},{"noteId":"1694180639113_noteId0","createTime":1694180640339,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180640635,"groupId":null,"title":"1694180639255_title","summary":"1694180639255_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180640481},{"noteId":"1693318482398_noteId","createTime":1693318482745,"star":0,"remindTime":0,"remindType":0,"infoVersion":24,"infoUpdateTime":1694181814962,"groupId":null,"title":null,"summary":"1693318482539_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1693318482875}]} 
+[INFO]caseLogMethod.py:68-00:41:26.936 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:41:26.968 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:41:26.972 >> Method Name: testCase07_handles 
+[INFO]caseLogMethod.py:74-00:41:26.974 >> Test Description: 校验已经删除的便签，恢复成功 
+[STEP]test_level3.py:36-00:41:26.978 >> 前置步骤1：新增一条便签 
+[INFO]test_level3.py:37-00:41:26.981 >> 创建用户1的便签数据 
+[INFO]test_level3.py:39-00:41:27.272 >> ['1694191286984_noteId0'] 
+[STEP]test_level3.py:46-00:41:27.274 >> 前置步骤2：删除已经新增的便签 
+[INFO]apiRe.py:22-00:41:27.276 >> url:http://note-api.wps.cn/v3/notesvr/delete 
+[INFO]apiRe.py:23-00:41:27.278 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:41:27.422 >> res code:200 
+[INFO]apiRe.py:27-00:41:27.424 >> res body:{"responseTime":34} 
+[STEP]test_level3.py:53-00:41:27.425 >> 前置步骤3：查询回收站下的已经删除的便签 
+[INFO]apiRe.py:38-00:41:27.427 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/10/notes 
+[INFO]apiRe.py:39-00:41:27.428 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:41:27.580 >> res code:200 
+[INFO]apiRe.py:43-00:41:27.582 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694191286984_noteId0","createTime":1694191288263,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694191288553,"groupId":null,"title":"1694191287129_title","summary":"1694191287129_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694191288443},{"noteId":"1694189968538_noteId0","createTime":1694189969804,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694189970106,"groupId":null,"title":"1694189968685_title","summary":"1694189968685_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694189969968},{"noteId":"1694181814390_noteId0","createTime":1694181815589,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181815945,"groupId":null,"title":"1694181814523_title","summary":"1694181814523_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181815727},{"noteId":"1694181755151_noteId0","createTime":1694181756359,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181756719,"groupId":null,"title":"1694181755290_title","summary":"1694181755290_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181756502},{"noteId":"1694181657020_noteId0","createTime":1694181658260,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181658589,"groupId":null,"title":"1694181657182_title","summary":"1694181657182_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181658425},{"noteId":"1694181619566_noteId0","createTime":1694181620795,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181621089,"groupId":null,"title":"1694181619705_title","summary":"1694181619705_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181620945},{"noteId":"1694180880862_noteId0","createTime":1694180882106,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180882401,"groupId":null,"title":"1694180881003_title","summary":"1694180881003_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180882249},{"noteId":"1694180639113_noteId0","createTime":1694180640339,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180640635,"groupId":null,"title":"1694180639255_title","summary":"1694180639255_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180640481},{"noteId":"1693318482398_noteId","createTime":1693318482745,"star":0,"remindTime":0,"remindType":0,"infoVersion":24,"infoUpdateTime":1694181814962,"groupId":null,"title":null,"summary":"1693318482539_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1693318482875}]} 
+[STEP]test_level3.py:62-00:41:27.583 >> 前置步骤4：回收站恢复已经删除的便签 
+[INFO]test_level3.py:63-00:41:27.584 >> 恢复回收站的便签 
+[INFO]apiRe.py:54-00:41:27.586 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/notes 
+[INFO]apiRe.py:55-00:41:27.588 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:58-00:41:27.725 >> res code:200 
+[INFO]apiRe.py:59-00:41:27.729 >> res body: 
+[STEP]test_level3.py:74-00:41:27.731 >> 前置步骤5：查询恢复之后是否在便签列表 
+[INFO]apiRe.py:38-00:41:27.733 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/10/notes 
+[INFO]apiRe.py:39-00:41:27.736 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:41:27.879 >> res code:200 
+[INFO]apiRe.py:43-00:41:27.881 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694189968538_noteId0","createTime":1694189969804,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694189970106,"groupId":null,"title":"1694189968685_title","summary":"1694189968685_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694189969968},{"noteId":"1694181814390_noteId0","createTime":1694181815589,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181815945,"groupId":null,"title":"1694181814523_title","summary":"1694181814523_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181815727},{"noteId":"1694181755151_noteId0","createTime":1694181756359,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181756719,"groupId":null,"title":"1694181755290_title","summary":"1694181755290_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181756502},{"noteId":"1694181657020_noteId0","createTime":1694181658260,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181658589,"groupId":null,"title":"1694181657182_title","summary":"1694181657182_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181658425},{"noteId":"1694181619566_noteId0","createTime":1694181620795,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181621089,"groupId":null,"title":"1694181619705_title","summary":"1694181619705_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181620945},{"noteId":"1694180880862_noteId0","createTime":1694180882106,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180882401,"groupId":null,"title":"1694180881003_title","summary":"1694180881003_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180882249},{"noteId":"1694180639113_noteId0","createTime":1694180640339,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180640635,"groupId":null,"title":"1694180639255_title","summary":"1694180639255_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180640481},{"noteId":"1693318482398_noteId","createTime":1693318482745,"star":0,"remindTime":0,"remindType":0,"infoVersion":24,"infoUpdateTime":1694181814962,"groupId":null,"title":null,"summary":"1693318482539_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1693318482875}]} 
+[INFO]caseLogMethod.py:68-00:42:34.511 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:42:34.546 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:42:34.547 >> Method Name: testCase07_handles 
+[INFO]caseLogMethod.py:74-00:42:34.548 >> Test Description: 校验已经删除的便签，恢复成功 
+[STEP]test_level3.py:36-00:42:34.549 >> 前置步骤1：新增一条便签 
+[INFO]test_level3.py:37-00:42:34.551 >> 创建用户1的便签数据 
+[INFO]test_level3.py:39-00:42:34.829 >> ['1694191354552_noteId0'] 
+[STEP]test_level3.py:46-00:42:34.831 >> 前置步骤2：删除已经新增的便签 
+[INFO]apiRe.py:22-00:42:34.832 >> url:http://note-api.wps.cn/v3/notesvr/delete 
+[INFO]apiRe.py:23-00:42:34.834 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:42:34.979 >> res code:200 
+[INFO]apiRe.py:27-00:42:34.983 >> res body:{"responseTime":33} 
+[STEP]test_level3.py:53-00:42:34.985 >> 前置步骤3：查询回收站下的已经删除的便签 
+[INFO]apiRe.py:38-00:42:34.986 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/10/notes 
+[INFO]apiRe.py:39-00:42:34.988 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:42:35.124 >> res code:200 
+[INFO]apiRe.py:43-00:42:35.125 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694191354552_noteId0","createTime":1694191355861,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694191356107,"groupId":null,"title":"1694191354690_title","summary":"1694191354690_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694191355966},{"noteId":"1694189968538_noteId0","createTime":1694189969804,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694189970106,"groupId":null,"title":"1694189968685_title","summary":"1694189968685_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694189969968},{"noteId":"1694181814390_noteId0","createTime":1694181815589,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181815945,"groupId":null,"title":"1694181814523_title","summary":"1694181814523_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181815727},{"noteId":"1694181755151_noteId0","createTime":1694181756359,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181756719,"groupId":null,"title":"1694181755290_title","summary":"1694181755290_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181756502},{"noteId":"1694181657020_noteId0","createTime":1694181658260,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181658589,"groupId":null,"title":"1694181657182_title","summary":"1694181657182_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181658425},{"noteId":"1694181619566_noteId0","createTime":1694181620795,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181621089,"groupId":null,"title":"1694181619705_title","summary":"1694181619705_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181620945},{"noteId":"1694180880862_noteId0","createTime":1694180882106,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180882401,"groupId":null,"title":"1694180881003_title","summary":"1694180881003_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180882249},{"noteId":"1694180639113_noteId0","createTime":1694180640339,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180640635,"groupId":null,"title":"1694180639255_title","summary":"1694180639255_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180640481},{"noteId":"1693318482398_noteId","createTime":1693318482745,"star":0,"remindTime":0,"remindType":0,"infoVersion":24,"infoUpdateTime":1694181814962,"groupId":null,"title":null,"summary":"1693318482539_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1693318482875}]} 
+[STEP]test_level3.py:62-00:42:35.127 >> 前置步骤4：回收站恢复已经删除的便签 
+[INFO]test_level3.py:63-00:42:35.128 >> 恢复回收站的便签 
+[INFO]apiRe.py:54-00:42:35.129 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/notes 
+[INFO]apiRe.py:55-00:42:35.131 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:58-00:42:35.267 >> res code:200 
+[INFO]apiRe.py:59-00:42:35.270 >> res body: 
+[STEP]test_level3.py:74-00:42:35.272 >> 前置步骤5：查询恢复之后是否在便签列表 
+[INFO]apiRe.py:38-00:42:35.273 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/10/notes 
+[INFO]apiRe.py:39-00:42:35.275 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:42:35.411 >> res code:200 
+[INFO]apiRe.py:43-00:42:35.412 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694189968538_noteId0","createTime":1694189969804,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694189970106,"groupId":null,"title":"1694189968685_title","summary":"1694189968685_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694189969968},{"noteId":"1694181814390_noteId0","createTime":1694181815589,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181815945,"groupId":null,"title":"1694181814523_title","summary":"1694181814523_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181815727},{"noteId":"1694181755151_noteId0","createTime":1694181756359,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181756719,"groupId":null,"title":"1694181755290_title","summary":"1694181755290_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181756502},{"noteId":"1694181657020_noteId0","createTime":1694181658260,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181658589,"groupId":null,"title":"1694181657182_title","summary":"1694181657182_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181658425},{"noteId":"1694181619566_noteId0","createTime":1694181620795,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181621089,"groupId":null,"title":"1694181619705_title","summary":"1694181619705_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181620945},{"noteId":"1694180880862_noteId0","createTime":1694180882106,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180882401,"groupId":null,"title":"1694180881003_title","summary":"1694180881003_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180882249},{"noteId":"1694180639113_noteId0","createTime":1694180640339,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180640635,"groupId":null,"title":"1694180639255_title","summary":"1694180639255_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180640481},{"noteId":"1693318482398_noteId","createTime":1693318482745,"star":0,"remindTime":0,"remindType":0,"infoVersion":24,"infoUpdateTime":1694181814962,"groupId":null,"title":null,"summary":"1693318482539_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1693318482875}]} 
+[INFO]caseLogMethod.py:68-00:51:38.771 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:51:38.808 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:51:38.810 >> Method Name: testCase01_major 
+[INFO]caseLogMethod.py:74-00:51:38.811 >> Test Description: 清除回收站便签，主流程校验 
+[INFO]test_level1.py:35-00:51:38.812 >> 查看回收站下便签列表 
+[STEP]test_level1.py:36-00:51:38.813 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-00:51:38.815 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-00:51:38.816 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:51:38.984 >> res code:200 
+[INFO]apiRe.py:43-00:51:38.985 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694189968538_noteId0","createTime":1694189969804,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694189970106,"groupId":null,"title":"1694189968685_title","summary":"1694189968685_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694189969968},{"noteId":"1694181814390_noteId0","createTime":1694181815589,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181815945,"groupId":null,"title":"1694181814523_title","summary":"1694181814523_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181815727},{"noteId":"1694181755151_noteId0","createTime":1694181756359,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181756719,"groupId":null,"title":"1694181755290_title","summary":"1694181755290_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181756502},{"noteId":"1694181657020_noteId0","createTime":1694181658260,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181658589,"groupId":null,"title":"1694181657182_title","summary":"1694181657182_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181658425},{"noteId":"1694181619566_noteId0","createTime":1694181620795,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694181621089,"groupId":null,"title":"1694181619705_title","summary":"1694181619705_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694181620945},{"noteId":"1694180880862_noteId0","createTime":1694180882106,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180882401,"groupId":null,"title":"1694180881003_title","summary":"1694180881003_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180882249},{"noteId":"1694180639113_noteId0","createTime":1694180640339,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694180640635,"groupId":null,"title":"1694180639255_title","summary":"1694180639255_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694180640481},{"noteId":"1693318482398_noteId","createTime":1693318482745,"star":0,"remindTime":0,"remindType":0,"infoVersion":24,"infoUpdateTime":1694181814962,"groupId":null,"title":null,"summary":"1693318482539_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1693318482875}]} 
+[STEP]test_level1.py:49-00:51:38.987 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-00:51:38.989 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:51:38.991 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:51:39.123 >> res code:200 
+[INFO]apiRe.py:27-00:51:39.125 >> res body:{"responseTime":26} 
+[INFO]caseLogMethod.py:68-00:51:39.126 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:51:39.128 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:51:39.129 >> Method Name: testCase02_must_key_0_noteIds 
+[INFO]caseLogMethod.py:74-00:51:39.130 >> Test Description: 清除回收站便签，必填项校验key:noteIds [with key='noteIds'] 
+[INFO]test_level1.py:62-00:51:39.131 >> 清除回收站便签 
+[INFO]caseLogMethod.py:68-00:51:39.137 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:51:39.138 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:51:39.139 >> Method Name: testCase01_major 
+[INFO]caseLogMethod.py:74-00:51:39.140 >> Test Description: 查看回收站下便签列表，主流程校验 
+[INFO]test_level1.py:33-00:51:39.141 >> 查看回收站下便签列表 
+[INFO]apiRe.py:38-00:51:39.145 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/10/notes 
+[INFO]apiRe.py:39-00:51:39.146 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:51:39.284 >> res code:200 
+[INFO]apiRe.py:43-00:51:39.286 >> res body:{"responseTime":0,"webNotes":[]} 
+[INFO]caseLogMethod.py:68-00:54:20.262 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:54:20.296 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:54:20.297 >> Method Name: testCase01_major 
+[INFO]caseLogMethod.py:74-00:54:20.298 >> Test Description: 清除回收站便签，主流程校验 
+[INFO]test_level1.py:35-00:54:20.299 >> 查看回收站下便签列表 
+[STEP]test_level1.py:36-00:54:20.301 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-00:54:20.302 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-00:54:20.304 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:54:20.469 >> res code:200 
+[INFO]apiRe.py:43-00:54:20.471 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level1.py:49-00:54:20.472 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-00:54:20.473 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:54:20.474 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:54:20.579 >> res code:500 
+[INFO]apiRe.py:27-00:54:20.580 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-00:54:20.583 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:54:20.584 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:54:20.585 >> Method Name: testCase02_must_key_0_noteIds 
+[INFO]caseLogMethod.py:74-00:54:20.587 >> Test Description: 清除回收站便签，必填项校验key:noteIds [with key='noteIds'] 
+[INFO]test_level1.py:63-00:54:20.588 >> 查看回收站下便签列表 
+[STEP]test_level1.py:64-00:54:20.589 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-00:54:20.591 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-00:54:20.592 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:54:20.729 >> res code:200 
+[INFO]apiRe.py:43-00:54:20.731 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level1.py:77-00:54:20.732 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-00:54:20.734 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:54:20.735 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:54:20.848 >> res code:500 
+[INFO]apiRe.py:27-00:54:20.850 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-00:55:12.849 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:55:12.884 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:55:12.885 >> Method Name: testCase01_major 
+[INFO]caseLogMethod.py:74-00:55:12.885 >> Test Description: 清除回收站便签，主流程校验 
+[INFO]test_level1.py:35-00:55:12.887 >> 查看回收站下便签列表 
+[STEP]test_level1.py:36-00:55:12.888 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-00:55:12.889 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-00:55:12.890 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:55:13.032 >> res code:200 
+[INFO]apiRe.py:43-00:55:13.035 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level1.py:49-00:55:13.038 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-00:55:13.039 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:55:13.041 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:55:13.154 >> res code:500 
+[INFO]apiRe.py:27-00:55:13.155 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-00:55:13.158 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:55:13.160 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:55:13.161 >> Method Name: testCase02_must_key_0_noteIds 
+[INFO]caseLogMethod.py:74-00:55:13.162 >> Test Description: 清除回收站便签，必填项校验key:noteIds [with key='noteIds'] 
+[INFO]test_level1.py:63-00:55:13.163 >> 查看回收站下便签列表 
+[STEP]test_level1.py:64-00:55:13.164 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-00:55:13.166 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-00:55:13.167 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:55:13.313 >> res code:200 
+[INFO]apiRe.py:43-00:55:13.315 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level1.py:77-00:55:13.316 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-00:55:13.317 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:55:13.319 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:55:13.423 >> res code:500 
+[INFO]apiRe.py:27-00:55:13.426 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-00:56:39.371 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:56:39.405 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:56:39.406 >> Method Name: testCase01_major 
+[INFO]caseLogMethod.py:74-00:56:39.407 >> Test Description: 清除回收站便签，主流程校验 
+[INFO]test_level1.py:35-00:56:39.408 >> 查看回收站下便签列表 
+[STEP]test_level1.py:36-00:56:39.410 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-00:56:39.411 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-00:56:39.412 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:56:39.567 >> res code:200 
+[INFO]apiRe.py:43-00:56:39.570 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1ef54c4bf4225bdcebe05dfe7cfe81ea","createTime":1694192184898,"star":0,"remindTime":0,"remindType":0,"infoVersion":3,"infoUpdateTime":1694192190009,"groupId":null,"title":"J+oY+y+oFmKLMuABMXQ7ow==","summary":"RV46L3lbTIp4iUZRnY7IjnvlhpklxdvB8UPzKf2qhzE=","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694192185044}]} 
+[STEP]test_level1.py:49-00:56:39.572 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-00:56:39.573 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:56:39.575 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:56:39.713 >> res code:200 
+[INFO]apiRe.py:27-00:56:39.715 >> res body:{"responseTime":26} 
+[INFO]caseLogMethod.py:68-00:56:39.717 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-00:56:39.718 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-00:56:39.720 >> Method Name: testCase02_must_key_0_noteIds 
+[INFO]caseLogMethod.py:74-00:56:39.721 >> Test Description: 清除回收站便签，必填项校验key:noteIds [with key='noteIds'] 
+[INFO]test_level1.py:63-00:56:39.722 >> 查看回收站下便签列表 
+[STEP]test_level1.py:64-00:56:39.724 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-00:56:39.725 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-00:56:39.726 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:56:39.864 >> res code:200 
+[INFO]apiRe.py:43-00:56:39.866 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level1.py:77-00:56:39.868 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-00:56:39.870 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:56:39.871 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:56:39.976 >> res code:500 
+[INFO]apiRe.py:27-00:56:39.979 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-09:12:05.661 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:12:05.704 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:12:05.705 >> Method Name: testCase03_input 
+[INFO]caseLogMethod.py:74-09:12:05.706 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为空key:noteIds 
+[INFO]test_level2.py:36-09:12:05.707 >> 查看回收站下便签列表 
+[STEP]test_level2.py:37-09:12:05.709 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:12:05.710 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:12:05.712 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:12:05.945 >> res code:200 
+[INFO]apiRe.py:43-09:12:05.947 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:50-09:12:05.949 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:12:05.950 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:12:05.952 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:12:06.062 >> res code:500 
+[INFO]apiRe.py:27-09:12:06.064 >> res body:{"errorCode":-7,"errorMsg":""} 
+[INFO]caseLogMethod.py:68-09:13:35.073 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:13:35.107 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:13:35.108 >> Method Name: testCase03_input 
+[INFO]caseLogMethod.py:74-09:13:35.109 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为空key:noteIds 
+[INFO]test_level2.py:36-09:13:35.111 >> 查看回收站下便签列表 
+[STEP]test_level2.py:37-09:13:35.113 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:13:35.115 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:13:35.116 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:13:35.287 >> res code:200 
+[INFO]apiRe.py:43-09:13:35.290 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:50-09:13:35.292 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:13:35.296 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:13:35.299 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:13:35.411 >> res code:500 
+[INFO]apiRe.py:27-09:13:35.413 >> res body:{"errorCode":-7,"errorMsg":""} 
+[INFO]caseLogMethod.py:68-09:13:35.415 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:13:35.416 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:13:35.418 >> Method Name: testCase04_input 
+[INFO]caseLogMethod.py:74-09:13:35.420 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为中文key:noteIds 
+[INFO]test_level2.py:62-09:13:35.422 >> 查看回收站下便签列表 
+[STEP]test_level2.py:63-09:13:35.424 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:13:35.426 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:13:35.427 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:13:35.565 >> res code:200 
+[INFO]apiRe.py:43-09:13:35.569 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:76-09:13:35.572 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:13:35.574 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:13:35.576 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:13:35.693 >> res code:500 
+[INFO]apiRe.py:27-09:13:35.695 >> res body:{"errorCode":-7,"errorMsg":""} 
+[INFO]caseLogMethod.py:68-09:14:17.084 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:14:17.129 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:14:17.131 >> Method Name: testCase03_input 
+[INFO]caseLogMethod.py:74-09:14:17.133 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为空key:noteIds 
+[INFO]test_level2.py:36-09:14:17.135 >> 查看回收站下便签列表 
+[STEP]test_level2.py:37-09:14:17.137 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:14:17.139 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:14:17.141 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:14:17.301 >> res code:200 
+[INFO]apiRe.py:43-09:14:17.305 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:50-09:14:17.308 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:14:17.311 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:14:17.314 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:14:17.426 >> res code:500 
+[INFO]apiRe.py:27-09:14:17.428 >> res body:{"errorCode":-7,"errorMsg":""} 
+[INFO]caseLogMethod.py:68-09:14:17.430 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:14:17.431 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:14:17.433 >> Method Name: testCase04_input 
+[INFO]caseLogMethod.py:74-09:14:17.434 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为中文key:noteIds 
+[INFO]test_level2.py:62-09:14:17.436 >> 查看回收站下便签列表 
+[STEP]test_level2.py:63-09:14:17.438 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:14:17.440 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:14:17.443 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:14:17.593 >> res code:200 
+[INFO]apiRe.py:43-09:14:17.597 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:76-09:14:17.600 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:14:17.604 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:14:17.606 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:14:17.709 >> res code:500 
+[INFO]apiRe.py:27-09:14:17.711 >> res body:{"errorCode":-7,"errorMsg":""} 
+[INFO]caseLogMethod.py:68-09:14:17.714 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:14:17.715 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:14:17.717 >> Method Name: testCase05_input 
+[INFO]caseLogMethod.py:74-09:14:17.718 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为特殊字符key:noteIds 
+[INFO]test_level2.py:88-09:14:17.720 >> 查看回收站下便签列表 
+[STEP]test_level2.py:89-09:14:17.722 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:14:17.723 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:14:17.724 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:14:17.861 >> res code:200 
+[INFO]apiRe.py:43-09:14:17.866 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:102-09:14:17.870 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:14:17.873 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:14:17.876 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:14:17.980 >> res code:500 
+[INFO]apiRe.py:27-09:14:17.984 >> res body:{"errorCode":-7,"errorMsg":""} 
+[INFO]caseLogMethod.py:68-09:15:03.661 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:15:03.695 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:15:03.697 >> Method Name: testCase03_input 
+[INFO]caseLogMethod.py:74-09:15:03.698 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为空key:noteIds 
+[INFO]test_level2.py:36-09:15:03.700 >> 查看回收站下便签列表 
+[STEP]test_level2.py:37-09:15:03.701 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:15:03.702 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:15:03.704 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:15:03.858 >> res code:200 
+[INFO]apiRe.py:43-09:15:03.862 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:50-09:15:03.865 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:15:03.868 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:15:03.870 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:15:03.980 >> res code:500 
+[INFO]apiRe.py:27-09:15:03.981 >> res body:{"errorCode":-7,"errorMsg":""} 
+[INFO]caseLogMethod.py:68-09:15:03.984 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:15:03.985 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:15:03.988 >> Method Name: testCase04_input 
+[INFO]caseLogMethod.py:74-09:15:03.990 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为中文key:noteIds 
+[INFO]test_level2.py:62-09:15:03.991 >> 查看回收站下便签列表 
+[STEP]test_level2.py:63-09:15:03.993 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:15:03.994 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:15:03.996 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:15:04.130 >> res code:200 
+[INFO]apiRe.py:43-09:15:04.131 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:76-09:15:04.133 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:15:04.135 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:15:04.136 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:15:04.237 >> res code:500 
+[INFO]apiRe.py:27-09:15:04.238 >> res body:{"errorCode":-7,"errorMsg":""} 
+[INFO]caseLogMethod.py:68-09:15:04.241 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:15:04.242 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:15:04.243 >> Method Name: testCase05_input 
+[INFO]caseLogMethod.py:74-09:15:04.245 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为特殊字符key:noteIds 
+[INFO]test_level2.py:88-09:15:04.246 >> 查看回收站下便签列表 
+[STEP]test_level2.py:89-09:15:04.247 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:15:04.249 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:15:04.251 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:15:04.388 >> res code:200 
+[INFO]apiRe.py:43-09:15:04.391 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:102-09:15:04.394 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:15:04.396 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:15:04.398 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:15:04.516 >> res code:500 
+[INFO]apiRe.py:27-09:15:04.518 >> res body:{"errorCode":-7,"errorMsg":""} 
+[INFO]caseLogMethod.py:68-09:15:04.521 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:15:04.523 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:15:04.525 >> Method Name: testCase06_input 
+[INFO]caseLogMethod.py:74-09:15:04.526 >> Test Description: 清除回收站便签，入参校验，校验参数字符串为None,key:noteIds 
+[INFO]test_level2.py:114-09:15:04.528 >> 查看回收站下便签列表 
+[STEP]test_level2.py:115-09:15:04.529 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:15:04.530 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:15:04.532 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:15:04.666 >> res code:200 
+[INFO]apiRe.py:43-09:15:04.670 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level2.py:128-09:15:04.673 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:15:04.676 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:15:04.679 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:15:04.799 >> res code:500 
+[INFO]apiRe.py:27-09:15:04.801 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-09:19:02.664 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:19:02.709 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:19:02.710 >> Method Name: testCase01_major 
+[INFO]caseLogMethod.py:74-09:19:02.710 >> Test Description: 清除回收站便签，主流程校验 
+[INFO]test_level1.py:36-09:19:02.712 >> 查看回收站下便签列表 
+[STEP]test_level1.py:37-09:19:02.713 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:19:02.716 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:19:02.718 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:19:02.883 >> res code:200 
+[INFO]apiRe.py:43-09:19:02.887 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level1.py:50-09:19:02.891 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:19:02.895 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:19:02.898 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:19:03.013 >> res code:500 
+[INFO]apiRe.py:27-09:19:03.015 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-09:19:03.018 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:19:03.020 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:19:03.022 >> Method Name: testCase02_must_key_0_noteIds 
+[INFO]caseLogMethod.py:74-09:19:03.023 >> Test Description: 清除回收站便签，必填项校验key:noteIds [with key='noteIds'] 
+[STEP]test_level1.py:64-09:19:03.025 >> 前置步骤1：新增一条便签 
+[INFO]test_level1.py:65-09:19:03.068 >> 创建用户1的便签数据 
+[INFO]test_level1.py:67-09:19:03.375 >> ['1694222343070_noteId0'] 
+[STEP]test_level1.py:74-09:19:03.378 >> 前置步骤2：删除已经新增的便签 
+[INFO]apiRe.py:22-09:19:03.383 >> url:http://note-api.wps.cn/v3/notesvr/delete 
+[INFO]apiRe.py:23-09:19:03.387 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:19:03.528 >> res code:200 
+[INFO]apiRe.py:27-09:19:03.532 >> res body:{"responseTime":29} 
+[INFO]test_level1.py:81-09:19:03.536 >> 查看回收站下便签列表 
+[STEP]test_level1.py:82-09:19:03.538 >> 前置步骤3：查询回收站列表 
+[INFO]apiRe.py:38-09:19:03.540 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:19:03.541 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:19:03.679 >> res code:200 
+[INFO]apiRe.py:43-09:19:03.680 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694222343070_noteId0","createTime":1694222343193,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694222343498,"groupId":null,"title":"1694222343227_title","summary":"1694222343227_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694222343343}]} 
+[STEP]test_level1.py:95-09:19:03.683 >> 前置步骤4：清空回收站 
+[INFO]apiRe.py:22-09:19:03.685 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:19:03.687 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:19:03.802 >> res code:500 
+[INFO]apiRe.py:27-09:19:03.806 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]test_level1.py:37-09:21:20.738 >> 删除便签 
+[INFO]test_level1.py:38-09:21:20.787 >> 创建用户1的便签数据 
+[INFO]apiRe.py:22-09:21:21.077 >> url:http://note-api.wps.cn/v3/notesvr/delete 
+[INFO]apiRe.py:23-09:21:21.081 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:21:21.228 >> res code:200 
+[INFO]apiRe.py:27-09:21:21.229 >> res body:{"responseTime":32} 
+[INFO]test_level1.py:57-09:21:21.232 >> 删除便签 
+[INFO]apiRe.py:22-09:21:21.234 >> url:http://note-api.wps.cn/v3/notesvr/delete 
+[INFO]apiRe.py:23-09:21:21.236 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:21:21.353 >> res code:500 
+[INFO]apiRe.py:27-09:21:21.355 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-09:21:32.762 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:21:32.796 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:21:32.797 >> Method Name: testCase01_major 
+[INFO]caseLogMethod.py:74-09:21:32.799 >> Test Description: 清除回收站便签，主流程校验 
+[INFO]test_level1.py:36-09:21:32.800 >> 查看回收站下便签列表 
+[STEP]test_level1.py:37-09:21:32.801 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:21:32.803 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:21:32.804 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:21:32.999 >> res code:200 
+[INFO]apiRe.py:43-09:21:33.003 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694222480788_noteId0","createTime":1694222480917,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694222481213,"groupId":null,"title":"1694222480933_title","summary":"1694222480933_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694222481062},{"noteId":"1694222343070_noteId0","createTime":1694222343193,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694222343498,"groupId":null,"title":"1694222343227_title","summary":"1694222343227_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694222343343}]} 
+[STEP]test_level1.py:50-09:21:33.006 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:21:33.009 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:21:33.013 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:21:33.204 >> res code:200 
+[INFO]apiRe.py:27-09:21:33.207 >> res body:{"responseTime":74} 
+[INFO]caseLogMethod.py:68-09:21:33.211 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:21:33.215 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:21:33.217 >> Method Name: testCase02_must_key_0_noteIds 
+[INFO]caseLogMethod.py:74-09:21:33.219 >> Test Description: 清除回收站便签，必填项校验key:noteIds [with key='noteIds'] 
+[INFO]test_level1.py:64-09:21:33.221 >> 查看回收站下便签列表 
+[STEP]test_level1.py:65-09:21:33.221 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:21:33.224 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:21:33.225 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:21:33.376 >> res code:200 
+[INFO]apiRe.py:43-09:21:33.380 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level1.py:78-09:21:33.383 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:21:33.386 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:21:33.389 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:21:33.502 >> res code:500 
+[INFO]apiRe.py:27-09:21:33.505 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-09:23:20.383 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:23:20.423 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:23:20.424 >> Method Name: testCase01_major 
+[INFO]caseLogMethod.py:74-09:23:20.427 >> Test Description: 清除回收站便签，主流程校验 
+[INFO]test_level1.py:36-09:23:20.428 >> 查看回收站下便签列表 
+[STEP]test_level1.py:37-09:23:20.429 >> 前置步骤1：查询回收站列表 
+[INFO]apiRe.py:38-09:23:20.431 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:23:20.433 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:23:20.649 >> res code:200 
+[INFO]apiRe.py:43-09:23:20.652 >> res body:{"responseTime":0,"webNotes":[]} 
+[STEP]test_level1.py:50-09:23:20.656 >> 前置步骤2：清空回收站 
+[INFO]apiRe.py:22-09:23:20.659 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:23:20.662 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:23:20.779 >> res code:500 
+[INFO]apiRe.py:27-09:23:20.783 >> res body:{"errorCode":-7,"errorMsg":"参数不合法！"} 
+[INFO]caseLogMethod.py:68-09:30:25.319 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:30:25.358 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:30:25.359 >> Method Name: testCase07_handles 
+[INFO]caseLogMethod.py:74-09:30:25.361 >> Test Description: 清除回收站便签，校验清空所有已经删除的便签 
+[STEP]test_level3.py:36-09:30:25.363 >> 前置步骤1：新增一条便签 
+[INFO]test_level3.py:37-09:30:25.365 >> 创建用户1的便签数据 
+[INFO]test_level3.py:39-09:30:25.680 >> ['1694223025366_noteId0'] 
+[STEP]test_level3.py:46-09:30:25.684 >> 前置步骤2：删除已经新增的便签 
+[INFO]apiRe.py:22-09:30:25.687 >> url:http://note-api.wps.cn/v3/notesvr/delete 
+[INFO]apiRe.py:23-09:30:25.690 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:30:25.830 >> res code:200 
+[INFO]apiRe.py:27-09:30:25.834 >> res body:{"responseTime":30} 
+[STEP]test_level3.py:53-09:30:25.837 >> 前置步骤3：查询回收站下的已经删除的便签 
+[INFO]apiRe.py:38-09:30:25.842 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/10/notes 
+[INFO]apiRe.py:39-09:30:25.845 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:30:26.002 >> res code:200 
+[INFO]apiRe.py:43-09:30:26.004 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694223025366_noteId0","createTime":1694223025492,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694223025804,"groupId":null,"title":"1694223025517_title","summary":"1694223025517_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694223025655}]} 
+[INFO]caseLogMethod.py:68-09:31:48.422 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:72-09:31:48.457 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:73-09:31:48.458 >> Method Name: testCase07_handles 
+[INFO]caseLogMethod.py:74-09:31:48.459 >> Test Description: 清除回收站便签，校验清空所有已经删除的便签 
+[STEP]test_level3.py:36-09:31:48.460 >> 前置步骤1：新增一条便签 
+[INFO]test_level3.py:37-09:31:48.463 >> 创建用户1的便签数据 
+[INFO]test_level3.py:39-09:31:48.791 >> ['1694223108465_noteId0'] 
+[STEP]test_level3.py:46-09:31:48.794 >> 前置步骤2：删除已经新增的便签 
+[INFO]apiRe.py:22-09:31:48.797 >> url:http://note-api.wps.cn/v3/notesvr/delete 
+[INFO]apiRe.py:23-09:31:48.801 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:31:48.976 >> res code:200 
+[INFO]apiRe.py:27-09:31:48.980 >> res body:{"responseTime":59} 
+[INFO]test_level3.py:62-09:31:48.984 >> 查看回收站下便签列表 
+[STEP]test_level3.py:63-09:31:48.987 >> 前置步骤3：查询回收站下的已经删除的便签 
+[INFO]apiRe.py:38-09:31:48.989 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/999/notes 
+[INFO]apiRe.py:39-09:31:48.991 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-09:31:49.364 >> res code:200 
+[INFO]apiRe.py:43-09:31:49.367 >> res body:{"responseTime":0,"webNotes":[{"noteId":"1694223108465_noteId0","createTime":1694223108601,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694223108923,"groupId":null,"title":"1694223108632_title","summary":"1694223108632_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694223108762},{"noteId":"1694223025366_noteId0","createTime":1694223025492,"star":0,"remindTime":0,"remindType":0,"infoVersion":2,"infoUpdateTime":1694223025804,"groupId":null,"title":"1694223025517_title","summary":"1694223025517_summary","thumbnail":null,"contentVersion":1,"contentUpdateTime":1694223025655}]} 
+[STEP]test_level3.py:75-09:31:49.371 >> 前置步骤4：清空回收站 
+[INFO]apiRe.py:22-09:31:49.375 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-09:31:49.377 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-09:31:49.572 >> res code:200 
+[INFO]apiRe.py:27-09:31:49.576 >> res body:{"responseTime":85} 

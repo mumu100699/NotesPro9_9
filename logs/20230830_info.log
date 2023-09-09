@@ -1,0 +1,12 @@
+[INFO]test_note_info2.py:30-21:50:36.705 >> test_note_info 
+[INFO]test_note_info2.py:31-21:50:36.802 >> 上传/更新便签主体主流程 
+[INFO]test_note_info2.py:32-21:50:36.803 >> 上传/更新便签主体 
+[INFO]test_note_info2.py:44-21:50:36.805 >> url:http://note-api.wps.cn/v3/notesvr/set/noteinfo 
+[INFO]test_note_info2.py:45-21:50:36.807 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]test_note_info2.py:30-21:58:53.166 >> test_note_info 
+[INFO]test_note_info2.py:31-21:58:53.202 >> 上传/更新便签主体主流程 
+[INFO]test_note_info2.py:32-21:58:53.203 >> 上传/更新便签主体 
+[INFO]test_note_info2.py:44-21:58:53.205 >> url:http://note-api.wps.cn/v3/notesvr/set/noteinfo 
+[INFO]test_note_info2.py:45-21:58:53.206 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]test_note_info2.py:49-21:58:53.363 >> res code:200 
+[INFO]test_note_info2.py:50-21:58:53.366 >> res body:{"responseTime":39,"infoVersion":1,"infoUpdateTime":1693403934489} 

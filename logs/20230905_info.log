@@ -1,0 +1,9 @@
+[INFO]caseLogMethod.py:55-23:26:27.947 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:59-23:26:28.060 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:60-23:26:28.061 >> Method Name: testCase02_input_empty_str 
+[INFO]caseLogMethod.py:61-23:26:28.062 >> Test Description: 入参校验，校验参数字符串为空 
+[INFO]test_level2.py:32-23:26:28.063 >> 获取首页便签数据 
+[INFO]apiRe.py:70-23:26:28.065 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/home/startindex/0/rows/50/notes 
+[INFO]apiRe.py:71-23:26:28.067 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:74-23:26:28.220 >> res code:200 
+[INFO]apiRe.py:75-23:26:28.222 >> res body:{"responseTime":0,"webNotes":[]} 

@@ -1,0 +1,31 @@
+NoteSvrSetNoteInfo:
+  must_key:
+      - ['noteId', 'title', 'summary', 'body', 'localContentVersion', 'BodyType']
+  path: '/v3/notesvr/set/noteinfo'
+NoteSvrSetNoteContent:
+  path: '/v3/notesvr/set/notecontent'
+NoteSvrSetNoteGetContent:
+  path: '/v3/notesvr/get/notebody'
+NoteDelete:
+  path: '/v3/notesvr/delete'
+NoteGroup:
+  path: '/v3/notesvr/get/notegroup'
+AddGroup:
+  path: '/v3/notesvr/set/notegroup'
+  must_key:
+    - - {'key':'groupId', 'code': 500}
+    - - {'key':'groupName', 'code': 500}
+
+ViewGroup:
+  path: '/v3/notesvr/web/getnotes/group'
+DeleteNoteGroup:
+  path: '/v3/notesvr/delete/notegroup'
+ViewCalendarNotes:
+  path: '/v3/notesvr/web/getnotes/remind'
+ViewRecycle:
+  path: '/v3/notesvr/user/{userid}/invalid/startindex/{startindex}/rows/{rows}/notes'
+RestoreRecycleNotes:
+  path: '/v3/notesvr/user/{userid}/notes'
+CleanRecycleNotes:
+  path: '/v3/notesvr/cleanrecyclebin'
+

@@ -1,0 +1,40 @@
+[INFO]apiRe.py:22-00:01:18.358 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:01:18.368 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:01:18.498 >> res code:200 
+[INFO]apiRe.py:27-00:01:18.516 >> res body:{"responseTime":24} 
+[INFO]caseLogMethod.py:55-00:01:38.175 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:59-00:01:38.249 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:60-00:01:38.250 >> Method Name: testCase_major 
+[INFO]caseLogMethod.py:61-00:01:38.250 >> Test Description: 清除回收站便签 
+[INFO]test_level1.py:35-00:01:38.250 >> 清除回收站便签 
+[INFO]caseLogMethod.py:55-00:01:38.266 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:59-00:01:38.266 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:60-00:01:38.266 >> Method Name: testCase_major 
+[INFO]caseLogMethod.py:61-00:01:38.266 >> Test Description: 查看回收站下便签列表 
+[INFO]test_level1.py:32-00:01:38.266 >> 查看回收站下便签列表 
+[INFO]apiRe.py:38-00:01:38.266 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/10/notes 
+[INFO]apiRe.py:39-00:01:38.282 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:01:38.473 >> res code:200 
+[INFO]apiRe.py:43-00:01:38.473 >> res body:{"responseTime":0,"webNotes":[{"noteId":"a090f358ceda136c0fffa79b98fba172","createTime":1693582893079,"star":0,"remindTime":0,"remindType":0,"infoVersion":3,"infoUpdateTime":1693582903601,"groupId":null,"title":"J+oY+y+oFmKLMuABMXQ7ow==","summary":"RaIfXEMXo0F9hN274maSWP8mbiPwieqcYMGnbB7outA=","thumbnail":null,"contentVersion":1,"contentUpdateTime":1693582893219},{"noteId":"310eb03fa8cf28d2922df172acdb572c","createTime":1692957060184,"star":0,"remindTime":1692959400000,"remindType":1,"infoVersion":3,"infoUpdateTime":1693582876565,"groupId":null,"title":"J+oY+y+oFmKLMuABMXQ7ow==","summary":"sdzMG7q1pB2WKFJwGdhVvh/9cKeD4KmsWsR8FvvUBnI=","thumbnail":null,"contentVersion":1,"contentUpdateTime":1692957060344}]} 
+[INFO]apiRe.py:22-00:02:42.911 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:02:42.915 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:02:43.065 >> res code:200 
+[INFO]apiRe.py:27-00:02:43.085 >> res body:{"responseTime":24} 
+[INFO]caseLogMethod.py:55-00:03:13.434 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:59-00:03:13.478 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:60-00:03:13.480 >> Method Name: testCase_major 
+[INFO]caseLogMethod.py:61-00:03:13.481 >> Test Description: 清除回收站便签 
+[INFO]test_level1.py:35-00:03:13.483 >> 清除回收站便签 
+[INFO]caseLogMethod.py:55-00:03:13.484 >> [94m--------------------CASE START--------------------------- 
+[INFO]caseLogMethod.py:59-00:03:13.486 >> Class Name: TestPro 
+[INFO]caseLogMethod.py:60-00:03:13.487 >> Method Name: testCase_major 
+[INFO]caseLogMethod.py:61-00:03:13.489 >> Test Description: 查看回收站下便签列表 
+[INFO]test_level1.py:32-00:03:13.490 >> 查看回收站下便签列表 
+[INFO]apiRe.py:38-00:03:13.492 >> url:http://note-api.wps.cn/v3/notesvr/user/1145973490/invalid/startindex/0/rows/10/notes 
+[INFO]apiRe.py:39-00:03:13.494 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:42-00:03:13.667 >> res code:200 
+[INFO]apiRe.py:43-00:03:13.669 >> res body:{"responseTime":0,"webNotes":[{"noteId":"a090f358ceda136c0fffa79b98fba172","createTime":1693582893079,"star":0,"remindTime":0,"remindType":0,"infoVersion":3,"infoUpdateTime":1693582903601,"groupId":null,"title":"J+oY+y+oFmKLMuABMXQ7ow==","summary":"RaIfXEMXo0F9hN274maSWP8mbiPwieqcYMGnbB7outA=","thumbnail":null,"contentVersion":1,"contentUpdateTime":1693582893219},{"noteId":"310eb03fa8cf28d2922df172acdb572c","createTime":1692957060184,"star":0,"remindTime":1692959400000,"remindType":1,"infoVersion":3,"infoUpdateTime":1693582876565,"groupId":null,"title":"J+oY+y+oFmKLMuABMXQ7ow==","summary":"sdzMG7q1pB2WKFJwGdhVvh/9cKeD4KmsWsR8FvvUBnI=","thumbnail":null,"contentVersion":1,"contentUpdateTime":1692957060344}]} 
+[INFO]apiRe.py:22-00:03:13.671 >> url:http://note-api.wps.cn/v3/notesvr/cleanrecyclebin 
+[INFO]apiRe.py:23-00:03:13.673 >> headers:{"Content-Type": "application/json", "X-user-key": "1145973490", "cookie": "wps_sid=V02SUGGKho67jU5kKjCXDVTu_I1zflI00a30970d00444e2af2"} 
+[INFO]apiRe.py:26-00:03:13.812 >> res code:200 
+[INFO]apiRe.py:27-00:03:13.816 >> res body:{"responseTime":27} 

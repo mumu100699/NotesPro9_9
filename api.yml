@@ -1,0 +1,7 @@
+NoteSvrSetNoteInfo:
+  path: "/v3/notesvr/set/noteinfo"
+  must_key:
+    - - {'key': 'noteId', 'code': 500}
+    - - {'key': 'title', 'code': 500}
+NoteSvrSetNoteContent:
+  path: "/v3/notesvr/set/notecontent"
