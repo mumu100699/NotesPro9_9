@@ -84,11 +84,9 @@ class TestPro(unittest.TestCase):
         }
 
         res = self.apiRe.note_post(self.url, self.user_id, self.sid, body)
+        self.assertEqual(200, res.status_code)
         # self.assertTrue(res.status_code == 200, msg='错误')  # 校验状态码
         infoVersion = res.json()['infoVersion']
-        # print(res.status_code)
-        # print(res.json())
-        self.assertEqual(200, res.status_code)
         expect_output = {'responseTime': int, 'infoVersion': int, 'infoUpdateTime': int}
         CheckTools().check_output(expect_output, res.json())  # actual_output等于res.json()
 
