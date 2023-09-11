@@ -18,7 +18,7 @@ from parameterized import parameterized  # 参数化实现
 
 
 @class_case_log
-class TestPro(unittest.TestCase):
+class ObtainNotesContent1(unittest.TestCase):
     envConfig = ReadYaml().env_yaml()
     apiConfig = ReadYaml().api_yaml('api.yml')
     path = apiConfig['NoteSvrSetNoteGetContent']['path']

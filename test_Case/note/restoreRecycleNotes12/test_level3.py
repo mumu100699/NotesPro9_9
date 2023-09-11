@@ -19,7 +19,7 @@ from businessCommon.automation import generate_notes
 
 
 @class_case_log
-class TestPro(unittest.TestCase):
+class RestoreRecycleNotes3(unittest.TestCase):
     envConfig = ReadYaml().env_yaml()
     apiConfig = ReadYaml().api_yaml('api.yml')
     path = apiConfig['RestoreRecycleNotes']['path']

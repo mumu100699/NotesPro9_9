@@ -18,7 +18,7 @@ from parameterized import parameterized
 
 
 @class_case_log
-class TestPro(unittest.TestCase):
+class ViewRecycleNoteList1(unittest.TestCase):
     envConfig = ReadYaml().env_yaml()
     apiConfig = ReadYaml().api_yaml('api.yml')
     path = apiConfig['ViewRecycle']['path']

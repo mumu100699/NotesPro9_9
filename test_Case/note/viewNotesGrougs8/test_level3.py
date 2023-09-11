@@ -19,7 +19,7 @@ from businessCommon.Clear_Notes import clear_notes_method
 
 
 @class_case_log
-class TestPro(unittest.TestCase):
+class ViewNotesGroups3(unittest.TestCase):
     envConfig = ReadYaml().env_yaml()
     apiConfig = ReadYaml().api_yaml('api.yml')
     path = apiConfig['ViewGroup']['path']

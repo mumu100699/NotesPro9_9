@@ -19,7 +19,7 @@ love:xz
 
 
 @class_case_log
-class TestPro(unittest.TestCase):
+class UpdatePageInfoSub1(unittest.TestCase):
     envConfig = ReadYaml().env_yaml()  # 读取yml文件的方法，实例化，设置一个变量envConfig接收
     print(envConfig)
     apiConfig = ReadYaml().api_yaml('api.yml')

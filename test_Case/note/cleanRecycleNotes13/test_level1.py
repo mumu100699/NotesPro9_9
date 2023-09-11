@@ -14,13 +14,13 @@ from common.ymlOperation import ReadYaml
 from common.caseLogMethod import info, step, warn, class_case_log
 import json
 from businessCommon.apiRe import ApiRe
-from test_Case.note.viewRecycleNoteList11.test_level1 import TestPro
+from test_Case.note.viewRecycleNoteList11.test_level1 import ViewRecycleNoteList1
 from parameterized import parameterized
 from businessCommon.automation import generate_notes
 
 
 @class_case_log
-class TestPro(unittest.TestCase):
+class CleanRecycleNotes1(unittest.TestCase):
     envConfig = ReadYaml().env_yaml()
     apiConfig = ReadYaml().api_yaml('api.yml')
     path = apiConfig['CleanRecycleNotes']['path']
@@ -29,7 +29,7 @@ class TestPro(unittest.TestCase):
     sid = envConfig['sid_1']
     user_id = envConfig['user_id_1']
     apiRe = ApiRe()
-    pro = TestPro()
+    pro = ViewRecycleNoteList1()
 
     def testCase01_major(self):
         """清除回收站便签，主流程校验"""

@@ -17,7 +17,7 @@ from businessCommon.apiRe import ApiRe
 from parameterized import parameterized
 
 
-class TestPro(unittest.TestCase):
+class GetPageNoteList1(unittest.TestCase):
     envConfig = ReadYaml().env_yaml()
     apiConfig = ReadYaml().api_yaml('api.yml')
     sid = envConfig['sid_1']
