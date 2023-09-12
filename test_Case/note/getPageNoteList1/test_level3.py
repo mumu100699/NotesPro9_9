@@ -102,4 +102,62 @@ class GetPageNoteList3(unittest.TestCase):
         expect_output = {'errorCode': -1011, 'errorMsg': 'user change!'}  # 期望结果：对齐文档
         CheckTools().check_output(expect_output, res.json())  # actual_output等于res.json()
 
+    def testCase09_handles(self):  # handles校验
+        """越权场景校验，用户id为空，是否能查询"""
+        step("创建用户1的便签数据，1条")
+        user2_note_id = generate_notes(num=1, sid=self.sid2, user_id=self.user_id2)
+
+        step("获取首页便签数据")
+        start_index = 0
+        userid = None
+        rows = 50
+        url = f'http://note-api.wps.cn/v3/notesvr/user/{str(userid)}/home/startindex/{str(start_index)}/rows/{str(rows)}/notes'
+        res = self.apiRe.note_get_path(url, self.user_id, self.sid)
+        self.assertEqual(500, res.status_code)  # 状态断言
+        # print(len(res.json()['webNotes']))
+        # self.assertEqual(1, len(res.json()['webNotes']))  # 返回空列表
+
+        expect_output = {'errorCode': int, 'errorMsg': str}  # 期望结果：对齐文档
+        CheckTools().check_output(expect_output, res.json())  # actual_output等于res.json()
+
+    def testCase10_handles(self):  # handles校验
+        """校验上传便签主体之后，能否查询"""
+        step("前置步骤1：上传/更新便签主体")
+        note_id = str(int(time.time() * 1000)) + '_noteId'
+        body_1 = {
+            'noteId': note_id
+        }
+        url_1 = 'http://note-api.wps.cn/v3/notesvr/set/noteinfo'
+        res_1 = self.apiRe.note_post(url_1, self.user_id, self.sid, body_1)
+        infoVersion = res_1.json()['infoVersion']
+        self.assertEqual(200, res_1.status_code)
+
+        step('前置步骤2：上传/更新便签内容')
+        url_2 = 'http://note-api.wps.cn/v3/notesvr/set/notecontent'
+        title = 'yangyang'
+        body_2 = {
+            'noteId': note_id,
+            'title': title,
+            'summary': 'test_summary',
+            'body': 'test_body',
+            'localContentVersion': infoVersion,
+            'BodyType': 0
+        }
+        res_2 = self.apiRe.note_post(url_2, self.user_id, self.sid, body_2)
+        self.assertEqual(200, res_2.status_code)
+
+        step("前置步骤3：查询便签列表，校验上传/更新便签内容是否成功")
+        start_index = 0
+        userid = self.user_id
+        rows = 50
+        url_3 = f'http://note-api.wps.cn/v3/notesvr/user/{str(userid)}/home/startindex/{str(start_index)}/rows/{str(rows)}/notes'
+        res_3 = self.apiRe.note_get_path(url_3, self.user_id, self.sid)
+        self.assertEqual(200, res_3.status_code)  # 状态断言
+        bb = (res_3.json()['webNotes'])
+        dd = False
+        for i in bb:
+            if i['noteId'] == note_id:
+                if i['title'] == title:
+                    dd = True
+        self.assertEqual(True, dd)
 
